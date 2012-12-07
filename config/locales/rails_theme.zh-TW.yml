@@ -1,0 +1,28 @@
+zh-TW:
+  helpers:
+    index: '列表'
+    show: '顯示'
+    new: '新增'
+    edit: '編輯'
+    destroy: '刪除'
+    are_you_sure: '你確定嗎?'
+    actions: '動作'
+    preview: '預覽'
+    cancel: '取消'
+    save: '儲存'
+    close: '關閉'
+    search: '搜尋'
+    download: '下載'
+    upload: '上傳'
+    export: '匯出'
+    previous_step: '上一步'
+    next_step: '下一步'
+    skip: '略過'
+    finish: '完成'
+    'yes': '是'
+    'no': '否'
+    not_available: '（尚無資料）'
+    posted_by: '由 %{name} 發佈'
+  application:
+    flash_messages:
+      title: '動態訊息'

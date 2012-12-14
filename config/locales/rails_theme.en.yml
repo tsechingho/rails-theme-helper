@@ -25,4 +25,8 @@ en:
     posted_by: 'Posted by %{name}'
   application:
     flash_messages:
-      title: '動態訊息'
+      title: 'Flash messages'
+  site:
+    title: 'RailsTheme'
+    author: 'Tse-Ching Ho'
+    subtitle: 'helps you build themes for rails'

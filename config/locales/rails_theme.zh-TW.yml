@@ -26,3 +26,7 @@ zh-TW:
   application:
     flash_messages:
       title: '動態訊息'
+  site:
+    title: 'RailsTheme'
+    author: '何澤清'
+    subtitle: '幫助您建置 Rails 主題套件'

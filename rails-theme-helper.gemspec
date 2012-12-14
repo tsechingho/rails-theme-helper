@@ -19,4 +19,6 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'railties', '>= 3.1.1'
   gem.add_dependency 'jquery-rails'
+  gem.add_dependency 'rails-i18n'
+  # gem.add_dependency 'will_paginate', '>= 3.0.3'
 end

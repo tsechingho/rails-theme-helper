@@ -26,6 +26,9 @@ zh-TW:
   application:
     flash_messages:
       title: '動態訊息'
+    pagination:
+      previous_label: '&larr;'
+      next_label: '&rarr;'
   site:
     title: 'RailsTheme'
     author: '何澤清'

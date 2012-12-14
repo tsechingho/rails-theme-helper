@@ -26,6 +26,9 @@ en:
   application:
     flash_messages:
       title: 'Flash messages'
+    pagination:
+      previous_label: '&larr;'
+      next_label: '&rarr;'
   site:
     title: 'RailsTheme'
     author: 'Tse-Ching Ho'

@@ -34,7 +34,7 @@ module RailsTheme
         tab_class = 'tab-pane fade'
         tab_class << ' active in' if active
         content_tag :div, class: tab_class, id: tag_id do
-          yield
+          yield active if block_given?
         end
       end
 
@@ -44,12 +44,12 @@ module RailsTheme
         [ link_to_remote_tab(text, url, "##{tag_id}"), { class: li_class } ]
       end
 
-      def remote_tab_pane url, tag_id, default, partial, locals
+      def remote_tab_pane url, tag_id, default
         active = current_page?(url) || tag_id == default
         tab_class = 'tab-pane fade'
         tab_class << ' active in' if active
         content_tag :div, class: tab_class, id: tag_id do
-          render partial, locals if active
+          yield active if block_given?
         end
       end
     end

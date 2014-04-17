@@ -2,6 +2,8 @@
 
 This gem helps you build themes for rails.
 
+Bootstrap 3.x is supported from version 0.1.0.
+
 ## Installation
 
 Add this line to your application's Gemfile:

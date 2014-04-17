@@ -8,9 +8,10 @@ module RailsTheme
       end
 
       def link_to_show url, options = {}
-        icon_class = options.delete(:icon_class) || 'icon-eye-open'
+        icon_class = options.delete(:icon_class) || 'glyphicon glyphicon-eye-open'
         options = {
-          class: 'btn',
+          role: 'button',
+          class: 'btn btn-default',
           icon_class: icon_class,
           title: t('helpers.show')
         }.deep_merge options
@@ -19,9 +20,10 @@ module RailsTheme
       end
 
       def link_to_new url, options = {}
-        icon_class = options.delete(:icon_class) || 'icon-plus'
+        icon_class = options.delete(:icon_class) || 'glyphicon glyphicon-plus'
         options = {
-          class: 'btn',
+          role: 'button',
+          class: 'btn btn-default',
           icon_class: icon_class,
           title: t('helpers.new')
         }.deep_merge options
@@ -29,9 +31,10 @@ module RailsTheme
       end
 
       def link_to_edit url, options = {}
-        icon_class = options.delete(:icon_class) || 'icon-edit'
+        icon_class = options.delete(:icon_class) || 'glyphicon glyphicon-edit'
         options = {
-          class: 'btn',
+          role: 'button',
+          class: 'btn btn-default',
           icon_class: icon_class,
           title: t('helpers.edit')
         }.deep_merge options
@@ -39,11 +42,12 @@ module RailsTheme
       end
 
       def link_to_destroy url, options = {}
-        icon_class = options.delete(:icon_class) || 'icon-trash'
+        icon_class = options.delete(:icon_class) || 'glyphicon glyphicon-trash'
         options = {
           method: :delete,
           data: { confirm: t('helpers.are_you_sure') },
-          class: 'btn',
+          role: 'button',
+          class: 'btn btn-default',
           icon_class: icon_class,
           title: t('helpers.destroy')
         }.deep_merge options

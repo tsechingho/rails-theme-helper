@@ -33,3 +33,4 @@ en:
     title: 'RailsTheme'
     author: 'Tse-Ching Ho'
     subtitle: 'helps you build themes for rails'
+    nav_toggle: 'Toggle navigation'

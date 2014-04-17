@@ -35,27 +35,30 @@ module RailsTheme
             target: modal_id,
             type: 'html'
           },
-          class: 'modal-open btn'
+          class: 'modal-open btn btn-default'
         }.deep_merge options
         link_to_edit url, options
       end
 
       def link_to_close_button
         options = {
+          type: 'button',
+          name: nil,
           data: { dismiss: 'modal' },
-          class: 'btn'
+          class: 'btn btn-default'
         }
-        link_to t('helpers.close'), '#', options
+        button_tag t('helpers.close'), options
       end
 
       def modal_close_button
         options = {
           type: 'button',
           name: nil,
+          'aria-hidden' => 'true',
           data: { dismiss: 'modal' },
           class: 'close'
         }
-        button_tag 'x', options
+        button_tag '&times;'.html_safe, options
       end
     end
   end

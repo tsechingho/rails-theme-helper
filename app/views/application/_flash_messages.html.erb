@@ -4,8 +4,6 @@
 
 <div class="messages">
   <% flash.each do |key, value| %>
-    <%= content_tag :div, class: "alert alert-#{key} #{key}" do
-      link_to('&times;'.html_safe, '#', class: 'close', data: { dismiss: 'alert'}) << value
-    end %>
+    <%= flash_box key, value %>
   <% end %>
 </div>

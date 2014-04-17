@@ -11,15 +11,21 @@ module RailsTheme
         link_to text, url, options
       end
 
-      def dropdown_btn text, url = '#', options = {}
+      def dropdown_btn text, options = {}
+        text = text.html_safe << ' '
+        text << content_tag(:span, nil, class: 'caret')
         options = {
-          class: 'btn dropdown-toggle'
+          name: nil,
+          type: 'button',
+          class: 'btn dropdown-toggle',
+          data: { toggle: 'dropdown' }
         }.deep_merge options
-        dropdown_toggle text, url, options
+        button_tag text, options
       end
 
       def dropdown_menu options = {}, &block
         options = {
+          role: 'menu',
           class: 'dropdown-menu'
         }.deep_merge options
         render_list options, &block

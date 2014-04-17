@@ -33,3 +33,4 @@ zh-TW:
     title: 'RailsTheme'
     author: '何澤清'
     subtitle: '幫助您建置 Rails 主題套件'
+    nav_toggle: '切換導覽列'

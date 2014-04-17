@@ -4,7 +4,7 @@ module RailsTheme
       def submit_button f, label = nil, options = {}
         options = {
           name: nil,
-          class: 'btn-primary'
+          class: 'btn btn-primary'
         }.deep_merge options
         f.button :submit, label, options
       end

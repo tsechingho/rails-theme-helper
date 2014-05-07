@@ -27,7 +27,7 @@ module RailsTheme
     end
 
     def flash_box key, value
-      alert_class = case key
+      alert_class = case key.to_sym
       when :notice
         'alert-warning'
       when :error

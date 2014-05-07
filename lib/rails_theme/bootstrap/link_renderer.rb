@@ -30,7 +30,7 @@ module RailsTheme
       protected
 
       def html_container(html)
-        tag :div, tag(:ul, html), container_attributes
+        tag :ul, html, container_attributes
       end
 
       def page_number(page)
@@ -39,12 +39,12 @@ module RailsTheme
         unless page == current_page
           tag :li, link(page, page, options)
         else
-          tag :li, link(page, '#', options), class: 'active'
+          tag :li, link(page, nil, {}), class: 'active'
         end
       end
 
       def gap
-        tag :li, link(super, '#'), class: 'disabled'
+        tag :li, link(super, nil), class: 'disabled'
       end
 
       def previous_or_next_page(page, text, class_name)
@@ -55,9 +55,9 @@ module RailsTheme
         if page
           tag :li, link(text, page, options), class: class_name
         else
-          tag :li, link(text, "#", options), class: class_name + ' disabled'
+          tag :li, link(text, nil, {}), class: class_name + ' disabled'
         end
       end
-    end    
+    end
   end
 end
